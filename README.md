@@ -13,7 +13,7 @@ The program loads and renders a truck model exported from Blender (OBJ) and disp
 * View and projection matrices (GLM) for scene viewpoint definition
 * OBJ model loading
 * Wireframe rendering mode for geometry debugging
-* Keyboard controls (WASD + QERF) to adjust the viewpoint in the 3D scene
+* Keyboard controls (WASD + QE + RF) to adjust the viewpoint in the 3D scene
 
 ## Preview
 ![Demo](truck.gif)
