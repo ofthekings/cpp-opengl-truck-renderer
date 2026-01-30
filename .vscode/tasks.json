@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Run OpenGL",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "main.cpp",
+                "shader.cpp",
+                "truck.cpp",
+                "-o",
+                "a3",
+                "-std=c++17",
+                "-I", "include",                   // Include path for tiny_obj_loader.h
+                "-I", "/opt/homebrew/include",     // GLEW + GLFW include
+                "-L", "/opt/homebrew/lib",         // GLEW + GLFW libraries
+                "-lglfw",
+                "-lglew",
+                "-framework", "OpenGL"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Builds OpenGL C++ project"
+        }
+    ]
+}
